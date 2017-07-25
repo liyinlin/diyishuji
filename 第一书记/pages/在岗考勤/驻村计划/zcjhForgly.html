@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Tabs and Accordions</title>
+<meta name="description" content="tabs and accordions">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/beyond.min.css">
+<script src="../../../js/jquery-2.0.3.min.js">
+</script>
+  <script src="../../../js/bootstrap.min.js">
+</script>
+ 
+  <script src="../../../js/fullcalendar.js">
+</script>
+
+<style>
+.table td {
+	text-align: center;
+	height: 38px;
+}
+</style>
+
+ <script type="text/javascript">
+
+        function jlqx(){
+        var city = $("#city").val();
+        
+        if(city=='淄博市'){
+                $("#town").empty();                                                                                                     
+                $("#town").append("<option>张店区<\/option>");
+                $("#town").append("<option>淄川区<\/option>");
+                $("#town").append("<option>博山区<\/option>");
+                $("#town").append("<option>临淄区<\/option>");
+                $("#town").append("<option>周村区<\/option>");
+                $("#town").append("<option>沂源县<\/option>");
+                $("#town").append("<option>高青县<\/option>");
+                $("#town").append("<option>桓台县<\/option>");
+                
+
+        }else if(city=='济南市'){
+                $("#town").empty(); 
+                $("#town").append("<option>长清区<\/option>");
+                $("#town").append("<option>市中区<\/option>");
+                $("#town").append("<option>历下区<\/option>");
+                $("#town").append("<option>高新区<\/option>");
+        }else{
+                $("#town").empty();
+        }
+        
+  }
+
+
+  $(function(){
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+                new Date(y, m, 1)
+                
+                var events1 = [
+
+{
+                                        title: '已计划',
+                                        start: new Date(y, m, 1),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 2),
+                                        borderColor: '#242DE0'
+                                        }
+                                        ,
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 3),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 4),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 5),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m,6),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m,7),
+                                        borderColor: '#242DE0'
+                                        },{
+                                        title: '已计划',
+                                        start: new Date(y, m, 20),
+                                        borderColor: '#242DE0'
+                                        },
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 21),
+                                        borderColor: '#242DE0'
+                                        }
+                                        ,
+                                        {
+                                        title: '已计划',
+                                        start: new Date(y, m, 22),
+                                        borderColor: '#242DE0'
+                                        }                                     
+                                        ];
+                
+        $('#calendar').fullCalendar({
+                header: {
+                    
+                    left: 'title'
+                },
+                editable: false,
+                buttonText: {
+                    prev: '上一月',
+                    next: '下一月',
+                    today: '今天',
+                    month: '月',
+                    week: '周',
+                    day: '日'
+                },
+                monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                dayNames: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                dayNamesShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                                today: ["今天"],
+                firstDay: 1,
+                                
+                droppable: true,
+                drop: function (date, allDay) {
+
+                    var originalEventObject = $(this).data('eventObject');
+
+                    var copiedEventObject = $.extend({}, originalEventObject);
+
+                    copiedEventObject.start = date;
+                    copiedEventObject.allDay = allDay;
+
+                    $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+                    if ($('#drop-remove').is(':checked')) {
+                        $(this).remove();
+                    }
+
+                },
+                events: events1
+            });
+  })
+  </script>
+</head>
+<body>
+
+	
+
+<div class="main-container">
+		 <div class="guidepost">
+	      <span class="guidepost-span">位置：</span> 
+	      <ul class="guidepost-con">
+	        <li class="guidepost-item">在岗考勤<i class="icons-12 icons-12-arrowr gray"></i>
+	        </li>
+	        <li class="guidepost-item">在岗计划
+	        </li>
+	      </ul>
+	    </div>
+
+<div class="e-main">
+      <div class="mian-box-content">
+        <div class="row margin-b10">
+          <div class="col-xs-12">
+            <div class="row-space">
+              <div class="e-box float-e-margins">
+                <div class="e-box-title">
+                  <h2>在岗计划列表</h2>
+                  <div class="e-box-toolbar">
+                    <div class="btn-group">      
+                    	         
+                    </div>
+                  </div>
+                </div>
+                <div class="e-box-content">
+                	  <div class="clearfix e-form margin-t10 pt10 pl15 pr15">
+                    <div class="form-group clearfix">
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-3xl">
+                          <option value="1">省市</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-4xl">
+                          <option value="1">区县</option>
+                        </select>
+                      </div>
+                     
+                      <div class="mr5 form-item">
+                        <input id="" type="" placeholder="村居" class="form-item-input">
+                      </div>
+                      <div class="form-item">
+                        <button class="btn btn-info lh22" style="padding:0 20px;"><i class="icons-22 icons-22-search white"></i>查 询</button>
+                      </div>
+                    </div>
+                  </div>
+                 <div class="row" style="margin-left: 10px;margin-right: 5px;">
+    				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >
+    					 <table  class="e-table clborder table table-hover table-striped table-bordered" style="margin-right: 10px;" >
+										<thead>
+											<tr>
+												<th style="width:80px;">第一书记</th>
+												<th>所在村居</th>
+												<th class="tc">操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>王宝刚</td>
+												<td>惠民县孙武街道王道仁村</td>
+												<td class="tc">
+													<div class="btn-group">
+														<button type="button" class="btn btn-xs"
+															title="详情"><i class="icons-22 icons-22-search gray"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>纪延江</td>
+												<td>惠民县孙武街道赵奢孟村</td>
+												<td class="tc">
+													<div class="btn-group">
+														<button type="button" class="btn btn-xs"
+															title="详情"><i class="icons-22 icons-22-search gray"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>杨春林</td>
+												<td>惠民县桑落墅镇堤口杨村</td>
+												<td class="tc">
+													<div class="btn-group">
+														<button type="button" class="btn btn-xs"
+															title="详情"><i class="icons-22 icons-22-search gray"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>周常浩</td>
+												<td>阳信县商店镇西吕村</td>
+												<td class="tc">
+													<div class="btn-group">
+														<button type="button" class="btn btn-xs"
+															title="详情"><i class="icons-22 icons-22-search gray"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>纵兆松</td>
+												<td>无棣县小泊头郭马村</td>
+												<td class="tc">
+													<div class="btn-group">
+														<button type="button" class="btn btn-xs"
+															title="详情"><i class="icons-22 icons-22-search gray"></i></button>
+													</div>
+												</td>
+											</tr>
+										
+										</tbody>
+									</table>
+                    <div style="padding:10px;">
+                      <div class="col-md-6 text-left">
+                        <lable>共100条，当前第1页</lable>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <ul class="pagination pagination-sm" style="margin:0 0 10px;">
+                          <li><a href="#">&laquo;</a></li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">&raquo;</a></li>
+                        </ul>
+                      </div>
+                    </div>
+    				</div>
+    				
+    				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7" style="margin-left: 35px;">
+    					<div class="">
+          <div class="widget flat">
+            <div class="widget-header bordered-bottom bordered-sky">
+              <span class="widget-caption">王宝刚2016年08月 在岗情况</span>
+            </div><!--Widget Header-->
+
+            <div class="">
+              <div class="widget-main no-padding">
+                <div id='calendar'></div>
+              </div><!--Widget Main Container-->
+            </div><!--Widget Body-->
+          </div>
+        </div>
+    				</div>
+    			</div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<i class="fa fa-trash-o"></i>是否确认删除
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">否</button>
+					<button type="button" class="btn btn-primary">是</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>	
+</body>
+
+
+</html>

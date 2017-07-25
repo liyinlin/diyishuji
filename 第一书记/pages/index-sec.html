@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>第一书记</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/layout.css">
+  <link rel="stylesheet" type="text/css" href="../css/clash.css">
+</head>
+<body>
+  <div class="layout-top">
+    <div class="layout-top-wave" id="topwave">
+      <div class="layer topwave wave1" data-depth="0.02"></div>
+      <div class="layer topwave wave2" data-depth="0.08"></div>
+      <div class="layer topwave wave3" data-depth="0.14"></div>
+      <div class="layer topwave wave4" data-depth="0.20"></div>
+    </div>
+    <div id="J_header">
+      <div class="logo">
+        <a href="#">
+            <img src="../img/Logo.png" alt="">
+            <img src="../img/title.png" alt="">
+        </a>
+      </div>
+                  <div class="sub-title pull-left" style=" line-height: 88px;"><h2 style=" line-height: 84px; color: #fff; font-weight: bolder; font-family: microsoft yahei; font-size: 22px; margin-left: 20px; letter-spacing: 2px; text-shadow: 0 1px 2px rgba(0,0,0,.4);">第一书记管理服务系统</h2></div>
+      <ul class="main-toolbar">
+        <li class="main-toolbar-item">
+          <a class="user-bar" href="javascript:void(0)">
+            <div class="user-img m-r-sm hide-minify">
+              <img src="../img/userimg1.png" alt="">
+            </div>
+            <div class="user-info">
+              <p>
+                <span class="user-name">赵玉峰</span>
+                <span class="user-name">书记</span>
+              </p>
+              <p><i class="icons-12 icons-12-date m-r-xs"></i>最后登录日期：10天以前</p>
+            </div>
+          </a>
+        </li>
+        
+        <li class="main-toolbar-item main-btn-holder">
+            <div data-toggle="dropdown" class="enter-button ">
+                <a aria-haspopup="true" aria-expanded="false" class="avatar dropdown-toggle">
+                    <i class="icons-32 icons-32-gear"></i>
+                </a>
+            </div>
+            <ul style="margin-left:-30px; min-width:100px" class="dropdown-menu">
+                <li>
+                    <a id="g-change-pwd" href="#" data-toggle="modal" data-target="#modal-2">修改密码</a>
+                </li>
+                <li>
+                    <a href="">退出登录</a>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layout-left">
+    <div class="sub-nav" id="sub-nav">
+      <p class="sub-nav-title">
+        <span class="hide-minify"><img src="../img/danghui.png" />&nbsp;第一书记管理服务</span>
+        <a class="minify-toggle" href="javascript:void(0);"><i class="icons-12 icons-12-draw gray" title="收起侧栏"></i></a>
+      </p>
+      <ul class="sub-nav-list">
+        <li class="sub-nav-li active">
+          <a class="sub-nav-a"  href="home-sec.html" target="mainFrame">
+            <i class="icons-22 icons-22-jc-home"></i><span class="firnav-txt">首页</span>
+          </a>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-czgk"></i> 村庄概况
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/villageInfo.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">村庄基本信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/secInfo.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">第一书记信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/pkhFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">贫困户信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/commit.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">村“两委”信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/infras.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">基础设施信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/cjcyFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">村级产业信息</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="村庄概况hxl/村庄概括sec/villageImg.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">村容村貌</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-dwlc"></i><span class="firnav-txt">单位联村</span>
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="第一书记_ls/单位联村-资金投入/zjtrList.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">资金投入</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="单位联村/现场办公/xcbgFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">现场办公</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="单位联村/帮包助困/bbzkFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">帮包助困</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-zcwm"></i><span class="firnav-txt">驻村为民</span>
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="驻村为民/驻村规划/zcgh_index_dysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">驻村规划</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="驻村为民/承诺践行/cnjx_index_dysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">承诺践行</span></a>
+            </li>
+            <li class="seclv-nav-li" onmouseover="thrlv_nav_mt(this)">
+              <a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">资金管理</span>
+                <i class="fl-r icons-12 icons-12-right gray"></i>
+              </a>
+              <div class="thrlv-nav-con">
+                <ul class="thrlv-nav-ul">
+                  <li><a href="驻村为民/资金管理/专项资金/zxzj_index_dysj.html" target="mainFrame">专项资金</a></li>
+                  <li><a href="驻村为民/资金管理/单位资金/dwzj_index_dysj.html" target="mainFrame">单位资金</a></li>
+                  <li><a href="驻村为民/资金管理/引入资金/yrzj_index.html" target="mainFrame">引入资金</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="驻村为民/政策落实/zcls_index.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">政策落实</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="驻村为民/项目上报/xmsb_index.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">项目上报</span></a>
+            </li>
+            <li class="seclv-nav-li" onmouseover="thrlv_nav_mt(this)">
+              <a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">日志管理</span>
+                <i class="fl-r icons-12 icons-12-right gray"></i>
+              </a>
+              <div class="thrlv-nav-con">
+                <ul class="thrlv-nav-ul">
+                  <li><a href="驻村为民/日志管理/工作日记/gzrjFordysj.html" target="mainFrame">工作日记</a></li>
+                  <li><a href="驻村为民/日志管理/走访日记/zfrjFordysj.html" target="mainFrame">走访日记</a></li>
+                  <li><a href="驻村为民/日志管理/工作汇报/gzhbFordysj.html" target="mainFrame">工作汇报</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-zdjz"></i><span class="firnav-txt">整顿进展</span>
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="挂点领导/leader.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">挂点领导</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="主要问题/question.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">主要问题</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="任务目标/goal.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">任务目标</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="进展情况/progress.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">进展情况</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-kqgl"></i><span class="firnav-txt">在岗考勤</span>
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="在岗考勤/驻村计划/zcjhFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">驻村计划</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="考勤管理/考勤记录/kqjl.index.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">驻村签到</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="在岗考勤/请假记录/qjjlFordysj.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">请假管理</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-fwjl"></i><span class="firnav-txt">服务交流</span>
+            <i class="fl-r icons-12 icons-12-down gray"></i>
+          </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="服务交流-wjx/policy.index.shuji.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">政策文件</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="服务交流-wjx/communication.index.shuji.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">互动交流</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="服务交流-wjx/consul.index.shuji.html" target="mainFrame"><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">专家咨询</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a" href="第一书记_ls/emailIndex.html"  target="mainFrame">
+            <i class="icons-22 icons-22-jc-gzyx"></i><span class="firnav-txt">工作邮箱</span>
+          </a>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a" href="驻村地图/zcdt.html"  target="mainFrame">
+            <i class="icons-22 icons-22-jc-gzyx"></i><span class="firnav-txt">驻村地图</span>
+          </a>
+        </li>
+        <li class="sub-nav-li">
+          <a class="sub-nav-a"  data-toggle="collapse" href="javascript:void(0)">
+            <i class="icons-22 icons-22-jc-sjzx"></i><span class="firnav-txt">数据中心</span> 
+           <i class="fl-r icons-12 icons-12-down gray"></i>
+         </a>
+          <ul class="seclv-nav-ul collapse">
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_xmjz.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">项目进展数据统计</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_zgqk.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">在岗情况数据统计</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_tpqk.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">脱贫情况数据统计</span></a>
+            </li>
+            
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_gzrz.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">工作日志统计</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_dwbf.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">单位帮扶数据统计</span></a>
+            </li>
+            <li class="seclv-nav-li">
+              <a href="数据中心/center_dysj_zdqk.html" target="mainFrame" ><i class="icons-12 icons-12-subnav gray" ></i><span class="secnav-txt">整顿情况数据统计</span></a>
+            </li>
+          </ul> 
+        </li>
+      </ul>
+    </div>      
+  </div>
+  
+  <div class="layout-content">
+	<iframe style="width:100%; height:100%" id="mainFrame" name="mainFrame" src="home-sec.html" frameborder="0"> </iframe>
+  </div>
+  
+  <script src="../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    
+  <!-- Scripts -->
+  <script src="../js/deploy/parallax.js"></script>
+  <script src="../js/menus.js"></script>
+</body>
+</html>

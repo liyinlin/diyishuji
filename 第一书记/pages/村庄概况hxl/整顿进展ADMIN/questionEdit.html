@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>主要问题-编辑</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+  
+   <!-- 日期控件CSS -->
+  <link href="../../../bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="main-container">
+          <div class="col-xs-12">
+            <div class="row-space">
+              <div class="e-box float-e-margins">
+                <div class="e-box-content pt10">
+                  <div class="clearfix e-form margin-t10" style="padding:0 15px;">
+                    <div class="container-fluid form-group clearfix">
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">主要问题：</span></div>
+                        <div class="col-md-9">
+                          <select class="form-item-input w-20xl" name="termQuid">
+								<option selected>党组织班子配备不齐、书记长期缺职、工作处于停滞状态的</option>
+								<option>党组织书记不胜任现职、工作不在状态、严重影响班子整体战斗力的</option>
+								<option>班子不团结、内耗严重、工作不能正常开展的</option>
+								<option>党组织长期不换届、组织制度形同虚设、不开展党组织活动的</option>
+								<option>党组织凝聚力不强、服务水平不高、群众满意率低的</option>
+								<option>换届选举拉票贿选问题突出、宗族宗教和黑恶势力干扰渗透严重的</option>
+								<option>村务居务财务不公开和民主管理混乱的</option>
+								<option>社会治安问题和信访矛盾纠纷集中的</option>
+								<option>村（社区）干部存在违纪违法问题、甚至贪污腐化的</option>
+								<option>无固定活动场所的</option>
+							</select>
+                        </div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">开始整顿时间：</span></div>
+                        <div class="col-md-9">
+                          <button class="closed abs l210" onclick="clrDate('#startDate')"></button>
+                          <input id="startDate" type="text" placeholder="开始整顿时间" class="form-item-input w-10xl form-item-date" value="2016-12-01" readonly>
+                        </div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">结束整顿时间：</span></div>
+                        <div class="col-md-9">
+                          <button class="closed abs l210" onclick="clrDate('#endDate')"></button>
+                          <input id="endDate" type="text" placeholder="开始整顿时间" class="form-item-input w-10xl form-item-date" value="2017-06-01" readonly>
+                        </div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">是否转换：</span></div>
+                        <div class="col-md-9">
+                          <select id="" type="text" placeholder="" class="form-item-input w-11xl">
+                            <option>是</option>
+						    <option selected>否</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-item w-100per" style="display: block" id="questionItem1">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">问题1：(<font
+							style="cursor: pointer;" onclick="del('questionItem1')">删除</font>)</span></div>
+                        <div class="col-md-9" >
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">具体问题：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="因为贫穷问题，书记长期处于务农状态" />
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">解决措施：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="大力进行经济建设，提高村民收入"/>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">开始时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate1" type="text"  class="form-item-input w-11xl form-item-date" value="2016-10-1" readonly>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">结束时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate2" type="text"  class="form-item-input w-11xl form-item-date" value="2017-10-1" readonly>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="form-item w-100per" style="display: block" id="questionItem2">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">问题2：(<font
+							style="cursor: pointer;" onclick="del('questionItem2')">删除</font>)</span></div>
+                        <div class="col-md-9" >
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">具体问题：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="因为教育意识薄弱缺少新时代的村长书记候选人"/>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">解决措施：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="加强教育，大力兴建学校和成人学校"/>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">开始时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate1" type="text"  class="form-item-input w-11xl form-item-date" value="2016-10-10" readonly>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">结束时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate2" type="text"  class="form-item-input w-11xl form-item-date" value="2017-10-1" readonly>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                       <div class="form-item w-100per" style="display: block" id="questionItem3">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">问题3：(<font
+							style="cursor: pointer;" onclick="del('questionItem3')">删除</font>)</span></div>
+                        <div class="col-md-9" >
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">具体问题：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="党组织班子配备不齐"/>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">解决措施：</span></div>
+                            <div>
+                              <input type="text" class="form-item-input w-11xl" value="培养返乡大学生党员"/>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">开始时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate1" type="text"  class="form-item-input w-11xl form-item-date" value="" readonly>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pt10">
+                            <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">结束时间：</span></div>
+                            <div>
+                              
+                               <input id="endDate2" type="text"  class="form-item-input w-11xl form-item-date" value ="" readonly>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="form-item w-100per mb15 pt10">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">添加具体问题：</span></div>
+                        <div class="col-md-9"><button type="button" class="btn btn-success w-4xl" onClick="addQuestionItem();">添加</button></div>
+                      </div>
+                       <div class="form-item w-100per Topline mb15 pt10">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32"></span></div>
+                        <div class="col-md-9"><button type="button" class="btn btn-default w-4xl lh22" onClick="location.href='question.html'"><i class="icons-22 icons-22-tz-sqhd gray"></i>保 存</button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+     </div> 
+</body>
+  <script src="../../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- 日期控件JS -->
+  <script type="text/javascript" src="../../bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../../bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="utf-8"></script>
+  
+  <!-- UEditor编辑器 -->
+  <script type="text/javascript" charset="utf-8" src="../../ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../ueditor/ueditor.all.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../ueditor/lang/zh-cn/zh-cn.js"></script>
+<script>
+     $("#startDate").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true
+    }).on("click",function(ev){
+        $("#startDate").datetimepicker("setEndDate", $("#startDate").val());
+    });
+     function clrDate(id){
+        $(id).val('');
+    }
+     function addQuestionItem(){
+      	if($("#questionItem1").css('display')=='none'){
+      		$('#questionItem1').css('display','block');
+      	}else if($("#questionItem2").css('display')=='none'){
+      		$('#questionItem2').css('display','block');
+      	}else if($("#questionItem3").css('display')=='none'){
+      		$('#questionItem3').css('display','block');
+      	}
+      }
+       function del(id){
+      	$('#'+id).css('display','none');
+      }
+</script>
+</html>

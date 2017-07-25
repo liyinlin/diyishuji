@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>任务目标</title>
+ <meta http-equiv="content-type" content="text/html;charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="../../css/base.css">
+ <link rel="stylesheet" type="text/css" href="../../css/common.css">
+ <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div class="main-container">
+		 <div class="guidepost">
+	      <span class="guidepost-span">位置：</span> 
+	      <ul class="guidepost-con">
+	        <li class="guidepost-item">整顿进展<i class="icons-12 icons-12-arrowr gray"></i>
+	        </li>
+	        <li class="guidepost-item">任务目标
+	        </li>
+	      </ul>
+	    </div>
+        <div class="e-main">
+	      <div class="mian-box-content">
+	        <div class="row margin-b10">
+	          <div class="col-xs-12">
+	            <div class="row-space">
+	              <div class="e-box float-e-margins">
+	                <div class="e-box-title">
+	                  <h2>任务目标数据查询</h2>
+	                  <div class="e-box-toolbar">
+	                    <div class="btn-group">
+	                      <button class="btn lh22" onClick="location.href='goalAdd.html'"><i class="icons-22 icons-22-plus gray"></i>新增</button>
+	                      <button class="btn lh22" data-toggle="modal" data-target="#modal-del"><i class="icons-22 icons-22-del gray"></i>删除</button>
+						  <button class="btn lh22" data-toggle="modal" data-target="#modal-impt"><i class="icons-22 icons-22-tz-mbxz gray"></i>导入</button>
+	                      <button class="btn lh22"><i class="icons-22 icons-22-tz-fwgw gray"></i>导出</button>
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="e-box-content pt10">
+	                	<div class="clearfix e-form margin-t10" style="padding:0 15px;">
+	                    <div class="form-group clearfix">
+	                      <div class="mr5 form-item">
+	                       <input type="email" class="form-item-input" id="exampleInputEmail1" placeholder="标题">
+	                      </div>
+	                      <div class="form-item">
+	                        <button class="btn btn-info lh22" style="padding:0 20px;"><i class="icons-22 icons-22-search white"></i>查 询</button>
+	                      </div>
+	                    </div>
+	                  </div>
+	                  <table class="e-table e-clborder">
+	                    <thead>
+	                        <tr>
+	                            <th class="tc"><input type="checkbox" /></span></th>
+								<th>标题</th>
+							    <th>开始时间</th>
+							    <th>结束时间</th>
+							    <th>审核状态</th>
+							    <th style="width: 150px">操作</th>
+	                        </tr>
+	                      </thead>
+	                      <tbody>
+	                       <tr>
+							  <td class="tc"><input type="checkbox" /></td>
+							  <td>巩固提高阶段</td>
+							  <td>2015-9-1</td>
+							  <td>2015-9-30</td>
+							  <td>审核通过</td>
+							  <td class="btn-group">
+							    <button type="button" class="btn btn-xs" onClick="location.href='goalInfo.html'"title="查看"><i class="icons-22 icons-22-search gray"></i></button>
+                                <button type="button" class="btn btn-xs" onClick="location.href='goalEdit.html'"title="编辑"><i class="icons-22 icons-22-edit gray"></i></button>
+                                <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-del"title="删除"><i class="icons-22 icons-22-del gray"></i></button>
+							  </td>
+						   </tr>
+	                       
+						   <tr>
+							  <td class="tc"><input type="checkbox" /></td>
+							  <td>集中整改阶段</td>
+							  <td>2015-8-1</td>
+							  <td>2015-8-30</td>
+							  <td>审核通过</td>
+							  <td class="btn-group">
+							    <button type="button" class="btn btn-xs" onClick="location.href='goalInfo.html'"title="查看"><i class="icons-22 icons-22-search gray"></i></button>
+                                <button type="button" class="btn btn-xs" onClick="location.href='goalEdit.html'"title="编辑"><i class="icons-22 icons-22-edit gray"></i></button>
+                                <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-del"title="删除"><i class="icons-22 icons-22-del gray"></i></button>
+							  </td>
+						   </tr>
+						   
+						    <tr>
+							  <td class="tc"><input type="checkbox" /></td>
+							  <td>摸底准备阶段</td>
+							  <td>2015-7-1</td>
+							  <td>2015-7-30</td>
+							  <td>审核通过</td>
+							  <td class="btn-group">
+							    <button type="button" class="btn btn-xs" onClick="location.href='goalInfo.html'"title="查看"><i class="icons-22 icons-22-search gray"></i></button>
+                                <button type="button" class="btn btn-xs" onClick="location.href='goalEdit.html'"title="编辑"><i class="icons-22 icons-22-edit gray"></i></button>
+                                <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-del"title="删除"><i class="icons-22 icons-22-del gray"></i></button>
+							  </td>
+						   </tr>
+						  
+	                      </tbody>
+	                    </table>
+	                    <div class="p10">
+	                      <div class="col-md-6 text-left">
+	                        <lable>共100条，当前第1页</lable>
+	                      </div>
+	                      <div class="col-md-6 text-right">
+	                        <ul class="pagination pagination-sm mt0 mr0 mb10">
+	                          <li><a href="#">&laquo;</a></li>
+	                          <li class="active"><a href="#">1</a></li>
+	                          <li><a href="#">2</a></li>
+	                          <li><a href="#">3</a></li>
+	                          <li><a href="#">4</a></li>
+	                          <li><a href="#">5</a></li>
+	                          <li><a href="#">&raquo;</a></li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	 </div>
+	<script>
+      $("#bootbox-confirm").on('click', function () {
+            bootbox.confirm("确认要删除该条记录吗?", function (result) {
+                if (result) {
+                    //
+                }
+            });
+        });
+    </script>
+</body>
+ <script src="../../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+  
+  <!-- Scripts -->
+  <script src="../../js/deploy/parallax.js"></script>
+</html>

@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Tabs and Accordions</title>
+<meta name="description" content="tabs and accordions">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../../css/base.css">
+<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+<!-- 日期控件CSS -->
+<link
+	href="../../../bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css"
+	rel="stylesheet" type="text/css">
+
+
+<script>
+		$(function(){
+			$('.date-picker').datepicker();
+		});
+		
+	</script>
+<style>
+	.rowHeight{padding-top: 20px;padding-bottom: 5px}
+</style>
+
+</head>
+<body>
+	<div class="main-container container-fluid" style="overflow: scroll;height: 500px;">
+		<div class="e-box-content">
+			<div class="clearfix e-form margin-t10" style="padding: 0 15px;  ">
+				<div class="container-fluid form-group clearfix">
+			<form class="form-inline">
+			<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">户主</label>
+    									<input type="text" value="王刚" class="form-control w-15xl" id="hz" name="hz">
+								</div>
+					
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">家庭人口数</label>
+    									<input type="text" class="form-control w-15xl" value="5" id="jtrks" name="jtrks">
+								</div>
+					
+						</div>
+						
+
+					</div> 
+						<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">贫困属性</label>
+								 <select id="pksx" name="pksx"  class="form-control" style="width: 335px;">
+											<option value="1">国家级</option>
+											<option value="1">省级</option>
+										</select>
+								</div>
+					
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">贫困程度</label>
+								 <select id="pkcd" name="pkcd"  class="form-control" style="width: 335px;">
+											<option value="1">重度贫困</option>
+											<option value="1">一般贫困</option>
+										</select>
+								</div>
+						</div>
+
+					</div> 
+					
+					<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">致贫原因</label>
+    									<input type="text" value="失去劳动能力" class="form-control w-15xl" id="zpyy" name="zpyy">
+								</div>
+					
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+					
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">计划脱贫日期</label>
+    									  <!--  <button class="closed" style="margin-left: 20px !important" onclick="clrDate('#jhtprq')"></button>
+    									   --> <input type="text" value="2016-02-02" style="width: 300px;" class="form-control  form-item-date" id="jhtprq" name="jhtprq">
+								</div>
+						</div>
+					</div> 
+					<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">帮扶需求</label>
+    									<input type="text" value="资金项目支持" class="form-control w-15xl" id="bfxq" name="bfxq">
+								</div>
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">年收入(元)</label>
+    									<input type="text" value="5000" class="form-control w-15xl" id="nsr" name="nsr">
+								</div>
+						</div>
+					</div> 
+						
+						<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">是否脱贫</label>
+								 <select id="sftp" name="sftp"  class="form-control" style="width: 335px;">
+											<option value="1">是</option>
+											<option value="1">否</option>
+										</select>
+								</div>
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">脱贫方式</label>
+								 <select id="tpfs" name="tpfs"  class="form-control" style="width: 335px;">
+											<option value="1">项目扶持</option>
+											<option value="1">政府帮助</option>
+										</select>
+								</div>
+						</div>
+					</div> 
+					<div class="row">
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">脱贫描述</label>
+    									<input type="text" class="form-control w-15xl" id="tpms" name="tpms">
+								</div>
+						</div>
+						<div class="col-sm-6  col-lg-6  col-md-6">
+								<div class="form-group rowHeight">
+								 <label class="form-item-name">致贫描述</label>
+    									   <input type="text" value="失去劳动能力" class="form-control w-15xl" id="zpms" name="zpms">
+										
+								</div>
+						</div>
+					</div> 
+					</form>			 
+				<div class="row Topline" style="text-align: center; margin-top: 10px;">
+					
+							<button style="margin-top: 10px;" type="button" class="btn btn-default  lh22" onClick="location.href='pkhFordysj.html'"><i class="icons-22 icons-22-tz-sqhd gray"></i>保 存</button>
+					
+
+					</div> 
+				
+					
+					
+					
+					
+				
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script src="../../../js/jquery-1.10.2.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../../js/bootstrap.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../../js/parallax.js"></script>
+	<!-- 日期控件JS -->
+	<script type="text/javascript"
+		src="../../../bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"
+		charset="utf-8"></script>
+	<script type="text/javascript"
+		src="../../../bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"
+		charset="utf-8"></script>
+	<!-- UEditor编辑器 -->
+	<script type="text/javascript" charset="utf-8"
+		src="../../../ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="../../../ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="../../../ueditor/lang/zh-cn/zh-cn.js"></script>
+
+	<script type="text/javascript">
+    // 初始化编辑器
+    var ue = UE.getEditor("editor", {
+        toolbars: [["fullscreen","source","undo","redo","bold","italic","underline","fontborder","strikethrough",
+                    "superscript","subscript","insertunorderedlist","selectall","insertorderedlist","justifyleft","justifycenter",
+                    "justifyright","justifyjustify","removeformat","simpleupload","snapscreen","emotion","attachment",
+                    "rowspacingtop","rowspacingbottom","lineheight","paragraph","fontfamily","fontsize","horizontal",
+                    "date","time","inserttable","deletetable","insertrow", "deleterow", "insertcol", "deletecol",
+                    "splittocells", "splittorows", "splittocols","searchreplace"]]
+    });
+  </script>
+	<script type="text/javascript">
+    // 开始日期和结束日期级联，结束日期必须大于等于开始日期
+    $("#jhtprq").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true
+    }).on("click",function(ev){
+        $("#jhtprq").datetimepicker("setEndDate", $("#datetimeEnd").val());
+    });
+    $("#datetimeEnd").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true
+    }).on("click", function (ev) {
+        $("#datetimeEnd").datetimepicker("setStartDate", $("#jhtprq").val());
+    });
+    // 清空日期
+    function clrDate(id){
+        $(id).val('');
+    }
+  </script>
+</body>
+
+
+</html>

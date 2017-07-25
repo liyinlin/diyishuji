@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>专项资金-首页</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../../../css/layout.css">
+</head>
+<body>
+  <div class="container">
+    <div class="guidepost">
+      <span class="guidepost-span">位置：</span> 
+      <ul class="guidepost-con">
+        <li class="guidepost-item">驻村为民 <i class="icons-12 icons-12-arrowr gray"></i>
+        </li>
+        <li class="guidepost-item">资金管理 <i class="icons-12 icons-12-arrowr gray"></i>
+        </li>
+        <li class="guidepost-item">专项资金
+        </li>
+      </ul>
+    </div>
+    <div class="e-main">
+      <div class="mian-box-content">
+        <div class="row margin-b10">
+          <div class="col-xs-12">
+            <div class="row-space">
+              <div class="e-box float-e-margins">
+                <div class="e-box-title">
+                  <h2>专项资金数据查询</h2>
+                  <div class="e-box-toolbar">
+                    <div class="btn-group">
+                      <button class="btn lh22" onClick="location.href='./zxzj_add_gly.html'"><i class="icons-22 icons-22-plus gray"></i>新增</button>
+                      <button class="btn lh22" data-toggle="modal" data-target="#modal-del"><i class="icons-22 icons-22-del gray"></i>删除</button>
+                      <button class="btn lh22" data-toggle="modal" data-target="#modal-impt"><i class="icons-22 icons-22-tz-mbxz gray"></i>导入</button>
+                      <button class="btn lh22"><i class="icons-22 icons-22-tz-fwgw gray"></i>导出</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-box-content">
+                	<div class="clearfix e-form margin-t10 pt10 pl15 pr15">
+                    <div class="form-group clearfix">
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-4xl">
+                          <option value="1">市</option>
+                          <option value="1" selected>滨州市</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-5xl">
+                          <option value="1">区县</option>
+                          <option value="1" selected>滨城区</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                        <input id="" type="text" placeholder="村居" class="form-item-input">
+                      </div>
+                      <div class="mr5 form-item">
+                        <input id="" type="text" placeholder="第一书记" class="form-item-input">
+                      </div>
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-5xl">
+                          <option value="1">专项项目</option>
+                          <option value="1">户户通工程</option>
+                          <option value="1">‘庭院经济’促进脱贫项目</option>
+                          <option value="1">水渠建设工程</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-4xl">
+                          <option value="1">资金级别</option>
+                          <option value="1">省级</option>
+                          <option value="1">市级</option>
+                        </select>
+                      </div>
+                      <div class="form-item">
+                        <button class="btn btn-info lh22" style="padding:0 20px;"><i class="icons-22 icons-22-search white"></i>查 询</button>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="e-table e-clborder">
+                    <thead>
+                        <tr>
+                            <th width="5%" class="tc"><input type="checkbox" /></th>
+                              <th width="20%">村居</th>
+                              <th width="8%">第一书记</th>
+                              <th width="10%">专项项目</th>
+                              <th width="5%">级别</th>
+                              <th width="8%" class="tc">金额(万元)</th>
+                              <th width="9%">市级确认</th>
+                              <th width="9%">区县级确认</th>
+                              <th width="9%">第一书记确认</th>
+                              <th width="12%" class="tc">操作</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tc"><input type="checkbox" /></td>
+                          <td>滨州市滨城区杨柳雪镇牌家村</td>
+                          <td>高波</td>
+                          <td>户户通工程</td>
+                          <td>省级</td>
+                          <td class="tc">100.5</td>
+                          <td>已确认</td>
+                          <td>已确认</td>
+                          <td>未确认</td>
+                          <td class="tc">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-xs" onclick="location.href='./zxzj_info_gly.html'"title="查看"><i class="icons-22 icons-22-search gray"></i></button>
+                              <button type="button" class="btn btn-xs"title="编辑"><i class="icons-22 icons-22-edit gray"></i></button>
+                              <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-del"title="删除"><i class="icons-22 icons-22-del gray"></i></button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="e-stripe-even">
+                          <td class="tc"><input type="checkbox" /></td>
+                          <td>滨州市滨城区滨北街道新徐家村</td>
+                          <td>高波</td>
+                          <td>庭院经济’促进脱贫项目</td>
+                          <td>省级</td>
+                          <td class="tc">88</td>
+                          <td>已确认</td>
+                          <td>已确认</td>
+                          <td>已确认</td>
+                          <td class="tc">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-xs" onclick="location.href='./zxzj_info_gly.html'"title="查看"><i class="icons-22 icons-22-search gray"></i></button>
+                              <button type="button" class="btn btn-xs"title="编辑"><i class="icons-22 icons-22-edit gray"></i></button>
+                              <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-del"title="删除"><i class="icons-22 icons-22-del gray"></i></button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="p10">
+                      <div class="col-md-6 text-left">
+                        <lable>共100条，当前第1页</lable>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <ul class="pagination pagination-sm mt0 mr0 mb10">
+                          <li><a href="#">&laquo;</a></li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">&raquo;</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 删除弹窗 -->
+    <div class="modal fade" id="modal-del" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div id="info" class="e-box m-b">
+            <div class="e-box-title">
+              <h2>信息提醒</h2>
+              <div class="e-box-toolbar"><button type="button" class="close m-t-sm" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+            </div>
+            <div class="e-box-content">
+              <div class="p-sm">
+                确定要删除所选记录吗？
+              </div>
+              <hr class="m-t-sm m-b-sm">
+              <div class="etal-c m-b-sm tc">
+                <button class="btn btn-info" style="padding:0 15px;">确 定</button>
+                <div class="btn" data-dismiss="modal">取 消</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 导入弹窗 -->
+    <div class="modal fade" id="modal-impt" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="info" class="e-box m-b">
+            <div class="e-box-title">
+              <h2>数据导入</h2>
+              <div class="e-box-toolbar"><button type="button" class="close m-t-sm" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+            </div>
+            <div class="e-box-content">
+              <div class="p-sm">
+                <a href="#">下载导入模板</a>
+                <hr class="m-t-sm m-b-sm">
+                <div class="form-group clearfix m0">
+                  <div class="form-item">
+                    <input id="impFile" type="text" placeholder="请选择要导入的文件(*.xlsx)" class="form-item-input w-15xl" readonly onclick="path.click()">
+                    <input type="file" style="display:none" id="path" onchange="impFile.value=this.value" />
+                  </div>
+                </div>
+              </div>
+              <hr class="m-t-sm m-b-sm">
+              <div class="etal-c m-b-sm tc">
+                <button class="btn btn-info" style="padding:0 15px;">导 入</button>
+                <div class="btn" data-dismiss="modal">取 消</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    
+</body>
+</html>

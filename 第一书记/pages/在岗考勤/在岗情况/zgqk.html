@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Tabs and Accordions</title>
+<meta name="description" content="tabs and accordions">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/beyond.min.css">
+<script src="../../../js/jquery-2.0.3.min.js">
+</script>
+  <script src="../../../js/bootstrap.min.js">
+</script>
+ 
+  <script src="../../../js/fullcalendar.js">
+</script>
+
+
+
+
+<style>
+.table td {
+	text-align: center;
+	height: 38px;
+}
+</style>
+  <script type="text/javascript">
+
+        function jlqx(){
+        var city = $("#city").val();
+        
+        if(city=='淄博市'){
+                $("#town").empty();                                                                                                     
+                $("#town").append("<option>张店区<\/option>");
+                $("#town").append("<option>淄川区<\/option>");
+                $("#town").append("<option>博山区<\/option>");
+                $("#town").append("<option>临淄区<\/option>");
+                $("#town").append("<option>周村区<\/option>");
+                $("#town").append("<option>沂源县<\/option>");
+                $("#town").append("<option>高青县<\/option>");
+                $("#town").append("<option>桓台县<\/option>");
+                
+
+        }else if(city=='济南市'){
+                $("#town").empty(); 
+                $("#town").append("<option>长清区<\/option>");
+                $("#town").append("<option>市中区<\/option>");
+                $("#town").append("<option>历下区<\/option>");
+                $("#town").append("<option>高新区<\/option>");
+        }else{
+                $("#town").empty();
+        }
+        
+  }
+
+
+  $(function(){
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+                new Date(y, m, 1)
+                
+                var events1 = [
+
+{title: '在岗人数:9999', start: new Date(y, m, 1), borderColor: '#e75b8d'},
+{title: '脱岗:9999', start: new Date(y, m, 1),borderColor: '#FFCE55'},
+{title: '计划人数:9999', start: new Date(y, m, 1),borderColor:'#2DC3E8'},
+{title: '请假人数:9999', start: new Date(y, m,1),borderColor: '#a0d468'},
+{title: '在岗人数:9999', start: new Date(y, m, 2), borderColor: '#e75b8d'},
+{title: '脱岗:9999', start: new Date(y, m, 2),borderColor: '#FFCE55'},
+{title: '计划人数:9999', start: new Date(y, m, 2),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,2),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 3), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 3),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 3),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,3),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 4), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 4),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 4),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,4),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 5), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 5),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 5),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,5),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 6), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 6),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 6),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,6),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 7), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 7),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 7),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,7),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 8), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 8),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 8),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,8),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 9), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 9),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 9),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,9),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 10), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 10),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 10),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,10),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 11), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 11),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 11),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,11),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 12), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 12),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 12),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,12),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 13), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 13),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 13),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,13),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 14), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 14),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 14),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,14),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 15), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 15),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 15),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,15),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 16), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 16),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 16),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,16),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 17), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 17),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 17),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,17),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 18), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 18),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 18),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,18),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 19), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 19),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 19),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,19),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 20), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 20),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 20),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,20),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 21), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 21),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 21),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,21),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 22), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 22),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 22),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,22),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 23), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 23),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 23),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,23),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 24), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 24),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 24),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,24),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 25), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 25),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 25),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,25),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 26), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 26),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 26),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,26),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 27), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 27),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 27),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,27),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 28), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 28),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 28),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,28),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 29), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 29),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 29),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,29),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 30), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 30),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 30),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,30),borderColor: '#a0d468'},{title: '在岗人数:9999', start: new Date(y, m, 31), borderColor: '#e75b8d'},{title: '脱岗:9999', start: new Date(y, m, 31),borderColor: '#FFCE55'},{title: '计划人数:9999', start: new Date(y, m, 31),borderColor:'#2DC3E8'},{title: '请假人数:9999', start: new Date(y, m,31),borderColor: '#a0d468'}                                       
+                                        
+                                        
+                                        ];
+                
+        $('#calendar').fullCalendar({
+                header: {
+                    
+                    left: 'title'
+                },
+                editable: false,
+                buttonText: {
+                    prev: '上一月',
+                    next: '下一月',
+                    today: '今天',
+                    month: '月',
+                    week: '周',
+                    day: '日'
+                },
+                monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                dayNames: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                dayNamesShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                                today: ["今天"],
+                firstDay: 1,
+                                
+                droppable: true,
+                drop: function (date, allDay) {
+
+                    var originalEventObject = $(this).data('eventObject');
+
+                    var copiedEventObject = $.extend({}, originalEventObject);
+
+                    copiedEventObject.start = date;
+                    copiedEventObject.allDay = allDay;
+
+                    $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+                    if ($('#drop-remove').is(':checked')) {
+                        $(this).remove();
+                    }
+
+                },
+                events: events1
+            });
+  })
+  </script>
+</head>
+<body>
+
+	
+
+<div class="main-container">
+		 <div class="guidepost">
+	      <span class="guidepost-span">位置：</span> 
+	      <ul class="guidepost-con">
+	        <li class="guidepost-item">在岗考勤<i class="icons-12 icons-12-arrowr gray"></i>
+	        </li>
+	        <li class="guidepost-item">在岗情况
+	        </li>
+	      </ul>
+	    </div>
+
+<div class="e-main">
+      <div class="mian-box-content">
+        <div class="row margin-b10">
+          <div class="col-xs-12">
+            <div class="row-space">
+              <div class="e-box float-e-margins">
+                <div class="e-box-title">
+                  <h2>在岗情况</h2>
+                  <div class="e-box-toolbar">
+                    <div class="btn-group">      
+                    	         
+                    </div>
+                  </div>
+                </div>
+                <div class="e-box-content">
+                	<div class="clearfix e-form margin-t10 pt10 pl15 pr15">
+                    <div class="form-group clearfix">
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-3xl">
+                          <option value="1">省派第一书记</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                        <select type="text" class="form-item-input w-4xl">
+                          <option value="1">济南</option>
+                        </select>
+                      </div>
+                      <div class="mr5 form-item">
+                      
+                      <select type="text" class="form-item-input w-4xl">
+                          <option value="1">长青</option>
+                          
+                        </select>
+                   <!--      <input id="" type="text" placeholder="第一书记姓名" class="form-item-input"> -->
+                      </div>
+                      <div class="mr5 form-item">
+                       <input id="" type="" placeholder="第一书记姓名" class="form-item-input"> 
+                      </div>
+                      
+                      
+                      <div class="form-item">
+                        <button class="btn btn-info lh22" style="padding:0 20px;"><i class="icons-22 icons-22-search white"></i>查 询</button>
+                      </div>
+                      
+                    
+                      
+                    </div>
+                    
+                    
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="widget flat">
+            <div class="widget-body">
+              <div class="widget-main no-padding">
+                <div id='calendar' ></div>
+              </div><!--Widget Main Container-->
+            </div><!--Widget Body-->
+          </div>
+        </div>
+                  </div>           
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<i class="fa fa-trash-o"></i>是否确认删除
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">否</button>
+					<button type="button" class="btn btn-primary">是</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+</body>
+
+
+</html>

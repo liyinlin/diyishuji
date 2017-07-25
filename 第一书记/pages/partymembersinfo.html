@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>信息管理</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/top.css">
+		<link rel="stylesheet" type="text/css" href="../css/jsTree/default/style.css">
+		<style type="text/css" id="jstree-stylesheet"></style>
+	</head>
+
+	<body>
+		<div class="layout-top">
+			<div class="layout-top-wave" id="topwave">
+				<div class="layer topwave wave1" data-depth="0.02"></div>
+				<div class="layer topwave wave2" data-depth="0.08"></div>
+				<div class="layer topwave wave3" data-depth="0.14"></div>
+				<div class="layer topwave wave4" data-depth="0.20"></div>
+			</div>
+			<div id="J_header">
+				<div class="logo">
+					<h1><a href="/info"><img src="../img/title.png" alt=""></a></h1>
+				</div>
+				<ul class="main-toolbar">
+					<li class="main-toolbar-item">
+						<a class="user-bar" href="javascript:void(0)">
+							<div class="user-img m-r-sm">
+								<img src="../img/userimg.png" alt="">
+							</div>
+							<div class="user-info">
+								<p>
+									<span class="user-name">王宝钢</span>
+								</p>
+								<p><i class="icons-12 icons-12-date m-r-xs"></i>最后登录日期：15天以前</p>
+							</div>
+						</a>
+					</li>
+					<li class="main-toolbar-item main-btn-holder">
+						<div data-toggle="dropdown" class="enter-button ">
+							<a aria-haspopup="true" aria-expanded="false" class="avatar dropdown-toggle">
+								<i class="icons-32 icons-32-grid"></i>
+							</a>
+						</div>
+						<ul style="margin-left:-30px; min-width:100px" class="dropdown-menu">
+							<li>
+								<a id="g-change-pwd" href="#">修改密码</a>
+							</li>
+							<li>
+								<a href="/login/logout">退出登录</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-toolbar-item main-btn-holder">
+						<i class="icons-32 icons-32-gear"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layout-left">
+			<div class="sub-nav" id="sub-nav">
+				<p class="sub-nav-title">
+					<i class="icons-22 icons-22-person"></i> 组织关系接转
+				</p>
+				<ul class="sub-nav-list">
+					<li class="sub-nav-li active">
+						<a class="sub-nav-a" class="collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i> 用户管理
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse">
+							<li class="seclv-nav-li active">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单
+									<i class="fl-r icons-12 icons-12-right gray"></i>
+								</a>
+								<div class="thrlv-nav-con">
+									<ul class="thrlv-nav-ul">
+										<li class="active">
+											<a href="#">专项资金</a>
+										</li>
+										<li>
+											<a href="#">引入资金</a>
+										</li>
+										<li>
+											<a href="#">单位资金</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="#"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a" class="collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i> 用户管理
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse">
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="#"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a" class="collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i> 用户管理
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse">
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="#"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a" class="collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i> 用户管理
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse">
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="#"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a" class="collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i> 用户管理
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse">
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="javascript:void(0)"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="#"><i class="icons-12 icons-12-subnav gray"></i> 三级菜单</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layout-content">
+			<div class="guidepost">
+				<span class="guidepost-span">位置：</span>
+				<ul class="guidepost-con">
+					<li class="guidepost-item">
+						<a href="#">首页 <i class="icons-12 icons-12-arrowr gray"></i></a>
+					</li>
+					<li class="guidepost-item">
+						<a href="#">二级页面 <i class="icons-12 icons-12-arrowr gray"></i></a>
+					</li>
+					<li class="guidepost-item">当前页面
+					</li>
+				</ul>
+			</div>
+			<div class="e-main">
+				<div class="main-box e-box full">
+						<!--主窗口 title-->
+						<div class="e-box-title">
+							<h2>信息管理</h2>
+							<ul class="e-box-toolbar">
+								<li class="btn-group e-i-quality-manage-nav">
+									<a class="dropdown-toggle btn e-clearbtn " data-toggle="dropdown" href="#"> 信息质量管控 <span class="caret"></span></a>
+									<ul class="dropdown-menu e-subnav-list">
+										<li>
+											<a href="#" onclick="DocManagerUI.showSingleValResult(); return false;"> 校验当前对象 </a>
+										</li>
+										<li>
+											<a href="#" onclick="DocManagerUI.showAddBatchValDlg(); return false;"> 信息校验 </a>
+										</li>
+										<li>
+											<a href="#" onclick="DocManagerUI.showBatchValResult(); return false;"> 校验结果 </a>
+										</li>
+									</ul>
+								</li>
+
+							</ul>
+						</div>
+						<!--主要内容区域-->
+						<div class="e-box-content e-hidden">
+							<div class="col-xs-3  h-100per">
+								<div class="e-border-right e-tree-container">
+										<div class="e-searchbar-holder">
+											<input type="text" id="simple-search-input">
+											<div class="sift-btn" title="筛选"> </div>
+										</div>
+										<div>
+											<div class="e-tree e-auto  jstree jstree-12 jstree-focused jstree-default" id="tree"><ul class="jstree-no-checkboxes"><li id="ed304f26-961b-4b33-adb2-fba342621bae" type="org" parent="" revoked="0" code="000002000008000019" auditing="0" haschildren="1" class="jstree-open jstree-last jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" class="jstree-clicked"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市委</a><ul><li id="54c71305-e7e8-4137-b958-3c4ae85ec42a" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000001" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共章丘市委</a></li><li id="ade4be58-f40a-4f88-83bf-b71ce0359e3f" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000002" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共平阴县委</a></li><li id="e5f2e763-8ee2-492a-a31c-f587e6335316" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000003" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济阳县委</a></li><li id="97385576-c38b-448a-889e-4ab6cd92005e" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000004" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共商河县委</a></li><li id="9f209c1a-888b-4f26-9ec6-e542847b7f43" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000005" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市历下区委</a></li><li id="7d0c4bed-c8d9-4107-88a8-5f1e78cb6c37" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000006" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市市中区委</a></li><li id="d7787849-155e-4b84-8054-e25595573ba8" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000008" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市天桥区委</a></li><li id="4aad64f3-613a-4364-919d-cb1bee313ff0" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000007" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市槐荫区委</a></li><li id="e8b3bd9b-7f35-4b1d-89b7-e81841903913" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000010" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市历城区委</a></li><li id="e9e3ad15-67cc-4c8a-bebc-02addcca0563" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000009" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市长清区委</a></li><li id="6240793f-6a43-4e6e-ae33-795ef98951b1" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000011" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市委市直机关工作委员会</a></li><li id="de6719b6-19e4-4689-87ae-8302c0eb4ab8" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000012" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市经济和信息化委员会委员会</a></li><li id="da527eca-2be0-4c0e-aa87-0ab308aa49cc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000013" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市教育局党委</a></li><li id="def7377b-1a4a-4a21-95ac-de8e94d7e280" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000014" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市公安局党委</a></li><li id="de02588b-f751-4193-96dd-6e8e9e600146" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000015" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市民政局党委</a></li><li id="f5fe745e-f0ca-41fd-9ed1-9669e3abea4f" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000016" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市财政局党委</a></li><li id="98d8ec2d-68c6-4311-be17-43d91b3e79e2" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000017" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市人社局党委</a></li><li id="a6cdc1f2-a63a-4f50-aa7c-978b6816709a" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000018" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市规划局党委</a></li><li id="49c4b8b5-1998-442f-be39-511744eed98a" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000019" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市交通运输局委员会</a></li><li id="e9411b61-580c-43fb-b28f-504fd3e71656" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000020" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市商务局党委</a></li><li id="4ba2aca1-d8e3-4123-bba0-ad74579914bf" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000021" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市文化广电新闻出版局党委</a></li><li id="d4893748-d975-4b5a-badc-ae4f89788ef8" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000022" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市卫生和计划生育委员会党委</a></li><li id="0f6adf02-0958-4b2c-8326-4591889d1a19" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000023" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#" ><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市体育局党委</a></li><li id="eb95a23c-b08b-4201-9971-72d6eff732a1" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000024" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南广播电视台党委</a></li><li id="7b73522b-f2a8-47b9-ae11-5873a9c0902c" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000025" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市粮食局党委</a></li><li id="27e51510-437e-47a5-8092-a5e8162f99de" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000026" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市国资委委员会</a></li><li id="d203c9d1-3d7f-45e1-9118-9b4310846c92" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000027" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市住房保障和房产管理局委员会</a></li><li id="fe7a6f71-ef7b-43d1-a8e1-3b1695510631" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000028" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市高新区党(工)委</a></li><li id="a75845c3-1a64-44f4-be9b-00fd6e3d40ec" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000030" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市供销合作社委员会</a></li><li id="6aa0043a-605e-43d5-850a-94190970188c" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000031" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市市政公用事业局委员会</a></li><li id="7478424e-2625-4afb-9a17-7671259f7f84" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000032" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市城市园林绿化局委员会</a></li><li id="7df17e28-1ebf-43c9-869e-a8560efc5e15" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000033" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市城市管理局（市城市管理行政执法局）委员会</a></li><li id="def770e3-3fc8-4159-a1d2-65edca09a34e" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000034" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市地方税务局党委</a></li><li id="cec3035e-c3ad-4d90-9a5b-b9843d2b3f69" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000035" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市工商行政管理局党委</a></li><li id="13db5975-1771-40a6-be0f-3f6d8d2859da" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000036" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市食品药品监督管理局党委</a></li><li id="8d196464-f16f-4a43-8a46-afe7d046ebdc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000037" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市烟草专卖局（公司）党委</a></li><li id="6f534fa7-94de-452e-a244-415f2632becc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000038" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共中国邮政集团公司济南市分公司委员会</a></li><li id="44400f5d-b0cc-4a55-97e7-902d651487bc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000039" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共国网济南供电公司党委</a></li><li id="10c424b6-d0bb-485e-a47f-f1c8a63eacb1" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000040" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共山东省石油集团济南总公司党委</a></li><li id="91befea7-d407-44c2-acc7-cfe9d8037334" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000041" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市齐鲁银行党委</a></li><li id="82d05a1a-8a46-4c75-b27d-059fa380d0aa" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000042" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市中国重型汽车集团有限公司党委</a></li><li id="e6fd818c-e47d-4bee-9a26-2b4c97617f4e" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000043" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市质监局党委</a></li><li id="5aee0bd7-6594-4ea2-89ce-a97d5d8c55bc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000044" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南炼化党委</a></li><li id="14035f36-6739-48cd-b65f-64a3e76550e8" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000045" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共中车山东机车车辆有限公司党委</a></li><li id="635bf194-6394-4426-b4e4-0f66a898a619" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000046" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共华能济南黄台发电有限公司党委</a></li><li id="1243e2a1-b5d7-464b-b739-e516b92ebfc5" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000047" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共山东中烟工业有限责任公司济南卷烟厂委员会</a></li><li id="6f0f6141-cd0f-4235-951b-3fadd3444c86" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000048" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济钢集团有限公司党委</a></li><li id="de642708-637a-4b60-8bd6-d2887396c735" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000049" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市华电章丘发电有限公司党委</a></li><li id="0fea59ff-bab8-43e4-bf32-4f186c0fb6f3" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000050" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市移动济南分公司党委</a></li><li id="1021963b-774b-4d0e-9ab1-f982e5a46072" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000051" auditing="0" haschildren="1" class="jstree-closed jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市联通济南分公司党委</a></li><li id="030cb009-83bf-4df7-a076-a545153590cc" type="org" parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0" code="000002000008000019000052" auditing="0" haschildren="1" class="jstree-closed jstree-last jstree-unchecked"><ins class="jstree-icon">&nbsp;</ins><a href="#"><ins class="jstree-checkbox">&nbsp;</ins><ins class="jstree-icon org">&nbsp;</ins>中共济南市司法局党委</a></li></ul></li></ul></div>
+										</div>
+									
+									<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+								</div>
+							</div>
+							<!--树-->
+							<div class="col-xs-9" style="">
+								<div class="e-clip-v w-100per e-h-inherit e-pos-r e-xxj-detail" id="angularApp" ui-view="">
+									<div class="e-i-view-select e-border-bottom">
+										<!--筛选器-->
+										<div class="tabbable">
+											<!-- Only required for left/right tabs -->
+												<ul class="nav nav-tabs e-tabs-subline">
+													<li class="active">
+														<a href="#tab2" data-toggle="tab"> 党员 </a>
+													</li>
+													<li >
+														<a href="#tab1" data-toggle="tab"> 组织 </a>
+													</li>
+													<li >
+														<a href="#tab3" data-toggle="tab"> 单位 </a>
+													</li>
+												</ul>
+											<div class="tab-content e-border-bottom">
+												<div class="tab-pane active" id="tab2">
+													<ul class="e-i-view-selectbar">
+														<!-- ngRepeat: f in filters.pm -->
+														<li class="active">
+															<a href="#" >全部</a>
+														</li>
+														<li >
+															<a href="#" >直管党员</a>
+														</li>
+														<li >
+															<a href="#" >历史党员</a>
+														</li>
+														<li >
+															<a href="#" >申请入党人员</a>
+														</li>
+														<li >
+															<a href="#" >入党积极分子</a>
+														</li>
+														<li >
+															<a href="#" >发展对象</a>
+														</li>
+														<li >
+															<a href="#" >预备党员</a>
+														</li>
+														<li >
+															<a href="#" >村居两委成员（非党员）</a>
+														</li>
+														<li >
+															<a href="#" >流入党员</a>
+														</li>
+														<li >
+															<a href="#" >历史村居两委成员</a>
+														</li>
+													</ul>
+												</div>
+												<div class="tab-pane" id="tab1">
+													<ul class="e-i-view-selectbar">
+														<!-- ngRepeat: f in filters.org -->
+														<li class="active">
+															<a href="#" >全部</a>
+														</li>
+														<li >
+															<a href="#" >农村党建</a>
+														</li>
+														<li >
+															<a href="#" >街道社区党建</a>
+														</li>
+														<li >
+															<a href="#" >公有企业党建</a>
+														</li>
+														<li >
+															<a href="#" >非公有制企业党建</a>
+														</li>
+														<li >
+															<a href="#" >社会组织党建</a>
+														</li>
+														<li >
+															<a href="#" >机关党建</a>
+														</li>
+														<li >
+															<a href="#" >学校党建</a>
+														</li>
+													</ul>
+												</div>
+												<div class="tab-pane" id="tab3">
+													<ul class="e-i-view-selectbar">
+														<!-- ngRepeat: f in filters.unit -->
+														<li class="active">
+															<a href="#" >全部</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="clearfix padding-5">
+												<span class="e-view-name fl-l">筛选条件：</span>
+												<ul class="clearfix fl-l">
+													<li class="e-tag"><span class="e-tag-name">人员类型：全部</span><span class="symbol glyphicon glyphicon-remove"></span></li>
+													<li class="e-tag"><span class="e-tag-name">组织机构：全部</span><span class="symbol glyphicon glyphicon-remove"></span></li>
+												</ul>
+												<div class="btn btn-xs">
+
+													<span>展开信息集导航</span>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--筛选-->
+									<div>
+
+										<div>
+											<div class="e-box-title">
+												<h3 >党组织基本信息 - 中共济南市委<span style="display: none;">（已撤销）</span></h3>
+												<ul class="e-box-toolbar">
+													<li class="e-box-title-action">
+														<a style="display: none;"><span class="symbol glyphicon glyphicon-floppy-disk"></span>
+															<span class="e-tag-name e-handpoint">保存</span></a>
+														<a style="display: none;"><span class="symbol glyphicon glyphicon-share-alt"></span>
+															<span class="e-tag-name e-handpoint">取消</span></a>
+														<a><span class="symbol glyphicon glyphicon-pencil"></span>
+															<span class="e-tag-name e-handpoint">编辑</span></a>
+														<span style="display: none;">正在保存...</span>
+													</li>
+												</ul>
+											</div>
+
+											<ul class="e-form p-sm clearfix p-sm">
+												<li class="form-item">
+													<span class="form-item-name ">党组织名称</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont">中共济南市委</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item">
+													<span class="form-item-name ">党组织所在单位(部门)</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" >济南市</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.F0147">
+													<span class="form-item-name ">联系电话</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont">053166601133</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.B0102">
+													<span class="form-item-name ">节点类型</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" >组织</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0121">
+													<span class="form-item-name ">组织类别</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" >中共省(区)辖市委员会</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.F0149">
+													<span class="form-item-name ">联系传真</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont"></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0154">
+													<span class="form-item-name ">撤销党组织日期</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" id="txt-D0154"></span>
+													<input class="form-item-input form-item-date" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.Z0501">
+													<span class="form-item-name ">党组织所属地关系</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" >市(地、州、盟)</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.F0151">
+													<span class="form-item-name ">联系邮编</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont"></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.OrgNameForTransfer">
+													<span class="form-item-name ">组织关系专用名称</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont">中共济南市委组织部</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.B110K">
+													<span class="form-item-name ">所属基层党委</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" >中共济南市委</span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.F0145">
+													<span class="form-item-name ">通讯地址</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont"></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0">
+													<span class="form-item-name ">试行党代会年会制标识</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont"></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0163">
+													<span class="form-item-name ">流动党员党支部标识</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" ></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0170">
+													<span class="form-item-name ">隶属政府工作部门的党组织标识</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" ></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0172">
+													<span class="form-item-name ">开展党员定期评议标识</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" ></span>
+													<input class="form-item-input" type="text">
+												</li>
+												<li class="form-item padding-2-0" name="OrgBaseInfo.D0174">
+													<span class="form-item-name ">开展党员旁听党委会议标识</span>
+													<span class="eal-m">：</span>
+													<span class="form-item-cont" ></span>
+													<input class="form-item-input" type="text">
+												</li>
+											</ul>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//- $(".e-main").css("min-height",$(window).height() - 56  + "px")
+			// $(function(){
+			// 	var topH = $('#top').height();
+			//  	var gH = $("page-title-holder").height();
+			//  	$(".e-main").css("min-height",$(window).height() - 56 + "px")
+			// 	$(".e-main .main-box-content ,.e-main .main-box-content .withtree-content").css("min-height",$(window).height() - 56 - 55 - 40 + "px")
+			// 	$(".white-bg.padding-10").css("min-height",$(window).height() - 56 - 78 - 82  + "px")
+			// })
+		</script>
+		<!-- Scripts -->
+		<script src="../js/deploy/parallax.js"></script>
+		<script>
+			// Pretty simple huh?
+			var scene = document.getElementById('topwave');
+			var parallax = new Parallax(scene);
+			$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+			$('.sub-nav-a[data-toggle="collapse"]').on('click', function() {
+				$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+				$(this).closest('.sub-nav-li').find('ul.collapse').collapse('toggle');
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>信息管理</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../css/base.css">
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+<link rel="stylesheet" type="text/css"
+	href="../../css/jsTree/default/style.css">
+<style type="text/css" id="jstree-stylesheet"></style>
+</head>
+
+<body>
+
+
+	<div class="guidepost">
+		<span class="guidepost-span">位置：</span>
+		<ul class="guidepost-con">
+			<li class="guidepost-item"><a href="#">工作邮箱<i
+					class="icons-12 icons-12-arrowr gray"></i></a></li>
+			<li class="guidepost-item">邮件编写</li>
+
+		</ul>
+	</div>
+	<div class="e-main">
+		<div class="main-box e-box full  " style="height:990px" >
+			<!--主窗口 title-->
+			<div class="e-box-title">
+				<h2>邮件编写</h2>
+				<div class="e-box-toolbar">
+					<div class="btn-group">
+						<button class="btn lh22" onClick=""><img src="../../img/发送.png" />发送</button>
+						<button class="btn lh22" onClick=""><img src="../../img/预览.png" />预览</button>
+						<button class="btn lh22" onClick=""><img src="../../img/存草稿.png" />存草稿</button>
+						<button class="btn lh22" onClick="location.href='emailIndex.html'"><img src="../../img/back.png" />返回</button>
+					</div>
+				</div>
+			</div>
+			<!--主要内容区域-->
+			<div class="e-box-content e-hidden">
+
+				<div class="col-xs-9" >
+					<div class="e-box-content">
+						<div class="clearfix e-form margin-t10  " style="padding: 0 15px;">
+							<div class="container-fluid form-group clearfix">
+								<form method="post" role="form">
+									<div class="form-item w-100per" style="margin-top: 10px;">
+										<div class="col-md-2 tr" >
+											<span class="form-item-name w-5xl lh32">收件人：</span>
+										</div>
+										<div class="col-md-10">
+											<input id="" type="text" placeholder="收件人"
+												class="form-item-input w-18xl">
+										</div>
+
+									</div>
+
+									<div class="form-item w-100per">
+										<div class="col-md-2 tr">
+											<span class="form-item-name w-5xl lh32">抄送人：</span>
+										</div>
+										<div class="col-md-10">
+											<input id="" type="text" placeholder="抄送人"
+												class="form-item-input w-18xl">
+										</div>
+
+									</div>
+
+
+									<div class="form-item w-100per">
+										<div class="col-md-2 tr">
+											<span class="form-item-name w-5xl lh32">主题：</span>
+										</div>
+										<div class="col-md-10">
+											<input id="" type="text" placeholder="主题"
+												class="form-item-input w-18xl">
+										</div>
+
+									</div>
+									<div class="form-item w-100per">
+										<div class="col-md-2 tr">
+											<span class="form-item-name w-5xl lh32">添加附件：</span>
+										</div>
+										<div class="col-md-10 lh32">
+											<div class="message">
+												<form method="post" action="" enctype="multipart/form-data">
+													<input type="button"
+														onMouseMove="f.style.pixelLeft=event.x-60;f.style.pixelTop=this.offsetTop;"
+														value="选择附件" size="30" onClick="f.click()" class="liulan">
+													<input type="file" id="f" onChange="txt.value=this.value"
+														name="f" style="height: 32px;" class="files" size="1"
+														hidefocus>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="form-item w-100per">
+
+										<div class="embed-responsive col-md-12" style="height: 300px;">
+											<script id="editor" type="text/plain"
+												style="width: 98%; height: 73%;"></script>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-3  h-100per" >
+					<div class="e-border-right e-tree-container" style="border-left:1px solid red">
+						<div class="e-searchbar-holder">
+							<input type="text" id="simple-search-input" placeholder="查找联系人">
+							<div class="sift-btn" title="筛选"></div>
+						</div>
+						<div>
+							<div
+								class="e-tree e-auto  jstree jstree-12 jstree-focused jstree-default"
+								id="tree">
+								<ul class="jstree-no-checkboxes">
+									<li id="ed304f26-961b-4b33-adb2-fba342621bae" type="org"
+										parent="" revoked="0" code="000002000008000019" auditing="0"
+										haschildren="1"
+										class="jstree-open jstree-last jstree-unchecked"><ins
+											class="jstree-icon">&nbsp;</ins><a href="#"
+										class="jstree-clicked"> <ins class="jstree-checkbox">&nbsp;</ins>
+											所有联系人
+									</a>
+										<ul>
+											<li id="54c71305-e7e8-4137-b958-3c4ae85ec42a" type="org"
+												parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0"
+												code="000002000008000019000001" auditing="0" haschildren="1"
+												class="jstree-closed jstree-unchecked"><ins
+													class="jstree-icon">&nbsp;</ins><a href="#"> <ins
+														class="jstree-checkbox">&nbsp;</ins> 分组一
+											</a></li>
+											<li id="54c71305-e7e8-4137-b958-3c4ae85ec42a" type="org"
+												parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0"
+												code="000002000008000019000001" auditing="0" haschildren="1"
+												class="jstree-closed jstree-unchecked"><ins
+													class="jstree-icon">&nbsp;</ins><a href="#"> <ins
+														class="jstree-checkbox">&nbsp;</ins> 分组二
+											</a>
+											<ul>
+											
+											
+										</ul>
+										</li>
+										<li id="54c71305-e7e8-4137-b958-3c4ae85ec42a" type="org"
+												parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0"
+												code="000002000008000019000001" auditing="0" haschildren="1"
+												class="jstree-closed jstree-unchecked"><a href="#"> <ins
+														class="jstree-checkbox">&nbsp;</ins> 管理员
+											</a></li>
+											<li id="54c71305-e7e8-4137-b958-3c4ae85ec42a" type="org"
+												parent="ed304f26-961b-4b33-adb2-fba342621bae" revoked="0"
+												code="000002000008000019000001" auditing="0" haschildren="1"
+												class="jstree-closed jstree-unchecked"><a href="#"> <ins
+														class="jstree-checkbox">&nbsp;</ins> 毛丽萍
+											</a></li>
+											
+								</ul>
+										</ul>
+										
+										
+							</div>
+						</div>
+
+						<div class="ui-resizable-handle ui-resizable-e"
+							style="z-index: 90;"></div>
+					</div>
+				</div>
+				<!--树-->
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery-1.10.2.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script>
+		//- $(".e-main").css("min-height",$(window).height() - 56  + "px")
+		// $(function(){
+		// 	var topH = $('#top').height();
+		//  	var gH = $("page-title-holder").height();
+		//  	$(".e-main").css("min-height",$(window).height() - 56 + "px")
+		// 	$(".e-main .main-box-content ,.e-main .main-box-content .withtree-content").css("min-height",$(window).height() - 56 - 55 - 40 + "px")
+		// 	$(".white-bg.padding-10").css("min-height",$(window).height() - 56 - 78 - 82  + "px")
+		// })
+	</script>
+	<!-- Scripts -->
+	<script src="../js/deploy/parallax.js"></script>
+	<script>
+		// Pretty simple huh?
+		var scene = document.getElementById('topwave');
+		var parallax = new Parallax(scene);
+		$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse')
+				.collapse('hide');
+		$('.sub-nav-a[data-toggle="collapse"]').on(
+				'click',
+				function() {
+					$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find(
+							'ul.collapse').collapse('hide');
+					$(this).closest('.sub-nav-li').find('ul.collapse')
+							.collapse('toggle');
+				})
+	</script>
+	<!-- UEditor编辑器 -->
+	<script type="text/javascript" charset="utf-8"
+		src="../../ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="../../ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="../../ueditor/lang/zh-cn/zh-cn.js"></script>
+	<script type="text/javascript">
+		// 初始化编辑器
+		var ue = UE.getEditor("editor", {
+			toolbars : [ [ "fullscreen", "source", "undo", "redo", "bold",
+					"italic", "underline", "fontborder", "strikethrough",
+					"superscript", "subscript", "insertunorderedlist",
+					"selectall", "insertorderedlist", "justifyleft",
+					"justifycenter", "justifyright", "justifyjustify",
+					"removeformat", "simpleupload", "snapscreen", "emotion",
+					"attachment", "rowspacingtop", "rowspacingbottom",
+					"lineheight", "paragraph", "fontfamily", "fontsize",
+					"horizontal", "date", "time", "inserttable", "deletetable",
+					"insertrow", "deleterow", "insertcol", "deletecol",
+					"splittocells", "splittorows", "splittocols",
+					"searchreplace" ] ]
+		});
+	</script>
+</body>
+
+</html>

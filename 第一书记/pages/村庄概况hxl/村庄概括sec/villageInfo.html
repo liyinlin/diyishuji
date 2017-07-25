@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>村庄信息</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="../../../css/base.css">
+ <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+ <link rel="stylesheet" type="text/css" href="../../../css/layout.css">
+
+<style type="text/css">
+.row_pd_t_b{padding-top: 20px;padding-bottom: 5px}
+.row_pd_t_b_e{padding-top: 18px;}
+.divGroup {
+	border-bottom: #cccccc 1px dashed;
+}
+.row_span_label{padding-top: 8px}
+.form-item-input1{  float:left; background:#FFF; padding:4px; border:1px solid #CCC; border-radius:2px;}
+</style>
+
+<script type="text/javascript" src="../../../js/jquery-2.0.3.min.js"></script>
+<script>
+  function to_VillageInfo(){
+    $("#villageEdit_div").css("display","none");
+    $("#villageInfo_div").css("display","block");
+  }
+  function to_VillageEdit(){
+    $("#villageEdit_div").css("display","block");
+    $("#villageInfo_div").css("display","none");
+  }
+</script>
+</head>
+<body >
+  <div class="main-container">
+   <div class="guidepost">
+	      <span class="guidepost-span">位置：</span> 
+	      <ul class="guidepost-con">
+	        <li class="guidepost-item">村庄概貌<i class="icons-12 icons-12-arrowr gray"></i>
+	        </li>
+	        <li class="guidepost-item">村庄信息
+	        </li>
+	      </ul>
+	    </div>
+  <div class="e-main" >
+    
+    <div class="mian-box-content" style="padding-left: 50px;">
+      <div class="row margin-b10">
+        <div class="col-lg-12 col-sm-12 col-xs-12"  id="villageInfo_div" style="display: block">
+         
+          <div class="row">
+            <div class="col-lg-offset-11 col-sm-offset-11 col-xs-offset-11 col-lg-1 col-sm-1 col-xs-1">
+              <button type="button" class="btn btn-xs" onClick="to_VillageEdit()"><i class="icons-22 icons-22-edit gray"></i>编辑</button>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村庄编号</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span> 3703061112222 </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村居</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>山东省滨城区梁才街道小赵村 </span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>行政区划</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>山东省滨城区梁才街道 </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>户数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>75</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>人口数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>238 </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>贫困户数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村党组织负责人</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>赵宏江 </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>党员数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村耕地面积(亩)</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>289.00</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>人均耕地面积(亩)</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>1.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>主导产业</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>粮食种植 </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>人均收入(元)</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>2600.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>集体收入(元)</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>10000.00</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>45岁以下党员数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>流动党员数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>0</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村民代表数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>7</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>"两委"人数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>6</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>党支部人数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>3</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>村委会人数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>"两委"兼职人数</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+           <div class="row row_pd_t_b divGroup">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span>是否脱贫</span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span>否</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <div class="col-lg-3 col-sm-3 col-xs-3">
+                <span></span>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-xs-9">
+                <span></span>
+              </div>
+            </div>
+          </div>
+               <div class="row row_pd_t_b divGroup">
+          
+            <img alt="" src="../../../img/xzc.bmp" width="600px;" height="400px;">
+            
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-xs-12" id="villageEdit_div" style="display: none"> 
+          <div class="row pt10">
+            <div class="col-lg-offset-11 col-sm-offset-11 col-xs-offset-11 col-lg-1 col-sm-1 col-xs-1">
+              <button type="button" class="btn btn-xs" onClick="to_VillageInfo()" ><i class="icons-22 icons-22-tz-sqhd gray"></i>保存</button>
+            </div>
+          </div>
+		  <div class="row row_pd_t_b_e">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3">
+			    <span class="control-label">村庄编号</span>
+			  </div>
+			  <div class="col-lg-9 col-sm-9 col-xs-9 ">
+			    <span class="control-label"> 3703061112222 </span>
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3">
+			    <span class="control-label">村居</span>
+			  </div>
+			  <div class="col-lg-9 col-sm-9 col-xs-9 ">
+			    <span class="control-label">山东省滨城区梁才街道小赵村</span>
+			  </div>
+		    </div>
+		  </div>
+		  <div class="row row_pd_t_b_e">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3">
+			    <span class="control-label">行政区划</span>
+			  </div>
+			  <div class="col-lg-9 col-sm-9 col-xs-9 ">
+			    <span class="control-label">山东省滨城区梁才街道</span>
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">户数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="75" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">人口数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="238" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">贫困户数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="1" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">村党组织负责人</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="赵宏江 " />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">党员数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="5" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">村耕地面积(亩)</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="289.00" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">人均耕地面积(亩)</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="1.00" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">主导产业</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="粮食种植" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">人均收入(元)</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="2600.00" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">集体收入(元)</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="10000.00" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">45岁以下党员数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="5" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">流动党员数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="0" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">村民代表数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="7" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">"两委"人数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="5" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">党支部人数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="3" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">村委会人数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="4" />
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label">"两委"兼职人数</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <input type="text" class="form-control" value="1" />
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+		      <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label">
+			    <span class="control-label">是否脱贫</span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    <select type="text" class="form-item-input" style="width:100%">
+		          <option>是</option>
+				  <option selected>否</option>
+				</select>
+			  </div>
+		    </div>
+		    <div class="form-group col-lg-6 col-sm-6 col-xs-6">
+			  <div class="col-lg-3 col-sm-3 col-xs-3 row_span_label" >
+			    <span class="control-label"></span>
+			  </div>
+			  <div class="col-lg-5 col-sm-5 col-xs-5 ">
+			    
+			  </div>
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

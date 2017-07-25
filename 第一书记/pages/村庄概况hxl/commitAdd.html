@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>任务目标添加</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+</head>
+<body>
+	<div class="main-container container-fluid">
+		<div class="e-box-content">
+		  <div class="e-box float-e-margins">
+			<div class="clearfix e-form margin-t10" style="padding:0 15px;">
+			  <div class="container-fluid form-group clearfix pt10">
+					<div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">姓名：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl"></div>
+                    </div>
+					<div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">性别：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input" style="width: 233px;">
+								<option>男</option>
+								<option>女</option>
+							</select>
+						</div>
+                      </div>
+				    <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">出生年月：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl"></div>
+                    </div>
+                    <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">民族：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input"  style="width: 233px;">
+								<option>汉族</option>
+								<option>白族</option>
+								<option>蒙古族</option>
+							</select>
+						</div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">政治面貌：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input"  style="width: 233px;">
+								<option>中共党员</option>
+								<option>团员</option>
+								<option>预备党员</option>
+							</select>
+						</div>
+                      </div>
+                       <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">学历：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input"  style="width: 233px;">
+								<option>大专</option>
+								<option>本科</option>
+								<option>研究生</option>
+								<option>其他</option>
+							</select>
+						</div>
+						</div>
+                   <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">职务：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl"></div>
+                    </div>
+					<div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">任职时长：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl"></div>
+                    </div>
+                    <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">联系电话：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl"></div>
+                    </div>
+					  <div class="form-item w-100per Topline mb15 pt10">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32"></span></div>
+                        <div class="col-md-9"><button type="button" class="btn btn-default w-4xl lh22" onClick="location.href='commit.html'"><i class="icons-22 icons-22-tz-sqhd gray"></i>保 存</button></div>
+                      </div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+      $(function(){
+      	$('.date-picker').datepicker();
+      	$("#registrationForm").bootstrapValidator({
+      		 message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+              fields: {
+              	 name: {
+                        validators: {
+                            notEmpty: {
+                                message: '姓名是必填项'
+                            }
+                        }
+                    },
+                    
+              
+              }
+      	
+      	});
+      });
+      function toCommit(){
+      	window.location.href="commit.html";
+      }
+    </script>
+</body>
+</html>

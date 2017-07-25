@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>任务目标添加</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+  <style type="text/css">
+/*imglist*/
+.imglist {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+
+.imglist li {
+	width: 188px;
+	border: solid 1px #fff;
+	height: 199px;
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.imglist li:hover {
+	border: solid 1px #e2b97e;
+}
+
+.imglist li span {
+	width: 168px;
+	height: 126px;
+	margin: 8px;
+}
+
+.imglist li h2 {
+	text-align: center;
+	line-height: 25px;
+}
+
+.imglist li p {
+	text-align: center;
+	line-height: 17px;
+	background: url(../images/line1.png) center center no-repeat;
+}
+
+.imglist li p a {
+	color: #EB5409;
+}
+
+.imglist li p a:hover {
+	color: #000;
+}
+</style>
+</head>
+<body>
+	<div class="main-container container-fluid">
+		<div class="e-box-content">
+		  <div class="e-box float-e-margins">
+			<div class="clearfix e-form margin-t10" style="padding:0 15px;">
+			  <div class="container-fluid form-group clearfix pt10">
+					<div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">基础设施名称：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl" value="办公室"></div>
+                    </div>
+					<div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">建设方式：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input "  style="width: 233px;">
+								<option>自建</option>
+								<option>购买</option>
+								<option>租赁</option>
+							</select>
+						</div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">房屋类型：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input "  style="width: 233px;">
+								<option>平房</option>
+								<option>楼房</option>
+								<option>其他</option>
+							</select>
+						</div>
+                      </div>
+                       <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">有无产权：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input"  style="width: 233px;">
+								<option>有</option>
+								<option>无</option>
+							</select>
+						</div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">房间数：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl" value="19"></div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">房间面积：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl" value="200.00"></div>
+                      </div>
+                       <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">建设日期：</span></div>
+                        <div class="col-md-8"><input id="" type="text" placeholder="" class="form-item-input w-10xl" value="2016-10-10"></div>
+                      </div>
+				       <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">办公设备是否齐全：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input "  style="width: 233px;">
+								<option>是</option>
+								<option selected>否</option>
+							</select>
+						</div>
+                      </div>
+                       <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">是否经常使用：</span></div>
+                        <div class="col-md-8">
+                          <select class="form-item-input "  style="width: 233px;">
+								<option>是</option>
+								<option>否</option>
+							</select>
+						</div>
+                      </div>
+                      <div class="form-item w-100per">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32">添加附件：</span></div>
+                        <div class="col-md-8">
+                         <button type="button" class="btn btn-primary" onclick="addPic()">
+								添加附件</button>
+						</div>
+                      </div>
+                      <div class="row">
+						<div class=" col-lg-8 col-md-offset-4">
+							<ul class="imglist">
+								<li id="img1" style="display: none"><span> <img
+										src="img/img01.png" />
+								</span>
+									<h2>
+										<a href="#"></a>
+									</h2>
+									<p>
+										<a onclick="delPic('img1')">删除</a>
+									</p></li>
+
+								<li id="img2" style="display: none"><span> <img
+										src="img/img01.png" />
+
+								</span>
+									<h2>
+										<a href="#"></a>
+									</h2>
+									<p>
+										<a onclick="delPic('img2')">删除</a>
+									</p></li>
+								<li id="img3" style="display: none"><span> <img
+										src="img/img01.png" />
+
+								</span>
+									<h2>
+										<a href="#"></a>
+									</h2>
+									<p>
+										<a onclick="delPic('img3')">删除</a>
+									</p></li>
+								<li id="img4" style="display: none"><span> <img
+										src="img/img01.png" />
+
+								</span>
+									<h2>
+										<a href="#"></a>
+									</h2>
+									<p>
+										<a onclick="delPic('img4')">删除</a>
+									</p></li>
+							</ul>
+						</div>
+					</div>
+					  <div class="form-item w-100per Topline mb15 pt10">
+                        <div class="col-md-2 tr"><span class="form-item-name w-5xl lh32"></span></div>
+                        <div class="col-md-9"><button type="button" class="btn btn-default w-4xl lh22" onClick="location.href='infras.html'"><i class="icons-22 icons-22-tz-sqhd gray"></i>保 存</button></div>
+                      </div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+<div style="display: none" id="form_div">
+		<form method="post" enctype="multipart/form-data">
+			<input style="opacity: 0; width: 0px" id="photo_file_btn" name="file"
+				type="file" onchange="photo_text_change();" />
+		</form>
+	</div>
+	<script>
+     function addPic(){
+      	$("#photo_file_btn").click();
+      }
+      function toInfras(){
+      	window.location.href="infras.html";
+      }
+      function photo_text_change(){
+      	if($("#img1").css("display")=='none'){
+      		$("#img1").css("display","block");
+      	}else if($("#img2").css("display")=='none'){
+      		$("#img2").css("display","block");
+      	}else if($("#img3").css("display")=='none'){
+      		$("#img3").css("display","block");
+      	}else if($("#img4").css("display")=='none'){
+      		$("#img4").css("display","block");
+      	}
+      }
+      function delPic(id){
+      	$('#'+id).css("display",'none');
+      }
+    </script>
+</body>
+</html>

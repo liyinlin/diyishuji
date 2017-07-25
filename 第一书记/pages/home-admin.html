@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>首页</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/layout.css">
+  
+  <!-- 日期控件CSS -->
+  <link href="../bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="guidepost">
+      <span class="guidepost-span">位置：</span> 
+      <ul class="guidepost-con">
+        <li class="guidepost-item">首页
+        </li>
+      </ul>
+      <div class="e-box-toolbar">
+        <div class="mr5 fl-l">
+          <select type="text" class="form-item-input w-4xl">
+            <option value="1">市</option>
+             
+          </select>
+        </div>
+        <div class="mr5 fl-l">
+          <select type="text" class="form-item-input w-5xl">
+            <option value="1">全部</option>
+            
+          </select>
+        </div>
+        <div class="mr5 fl-l">
+          <select type="text" class="form-item-input w-7xl">
+            <option value="1">省派</option>
+            
+          </select>
+        </div>
+        <div class="mr15 fl-l">
+          <button class="btn btn-info lh22" style="padding:0 20px;"><i class="icons-22 icons-22-search white"></i>查 询</button>
+        </div>
+      </div>
+    </div>
+    <div class="e-main">
+      <div class="mian-box-content">
+        <div class="row margin-b10">
+          <!-- 地图 -->
+          <div class="col-xs-6">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <img src="../img/home-map.png" style="width:100%;height:100%;" />
+              </div>
+            </div>
+          </div>
+          
+          <!-- 待办事项 -->
+          <div class="col-xs-3">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <div class="e-box-title">
+                  <!--h2>待办</h2-->
+                  <div class="e-box-toolbar pull-left with-tab">
+                    <ul class="nav nav-tabs e-tabs-subline">
+                      <li class="active">
+                        <a href="#tab4-1" data-toggle="tab" >未读消息(2)</a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#tab4-2" data-toggle="tab" >未读邮件(1)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="e-box-content pt15" style="height:220px;overflow-y:auto;">
+                  <div id="myTabContent" class="tab-content padding-10">
+                    <div id="tab4-1" class="tab-pane active in">
+                      <ul class="list-group">
+                        <li class="list-group-item bl0 br0"><a href="#" title="关于提报11月在岗计划的通知">关于提报11月在岗计划的通知</a>
+                          <span class="badge" style="background:#e91b1b">新</span>
+                        </li>
+                        <li class="list-group-item bl0 br0"><a href="#" title="提交了新的请假记录需要审核"> 提交了新的请假记录...</a>
+                          <span class="badge" style="background:#e91b1b">新</span>
+                        </li>
+                        <li class="list-group-item bl0 br0"><a href="#" title=" 提交了11月份的在岗计划需要审核"> 提交了11月份的在岗...</a></li>
+                      </ul>
+                    </div>
+                    <div id="tab4-2" class="tab-pane">
+                      <ul class="list-group">
+                        <li class="list-group-item bl0 br0"><a href="#" title="温馨提示：天冷降温，请注意身体健康！">温馨提示：天冷降温，请注...</a>
+                          <span class="badge" style="background:#e91b1b">新</span>
+                        </li>
+                        <li class="list-group-item bl0 br0"><a href="#" title="关于尽快提报6月份在岗计划的通知">关于尽快提报6月份在岗计...</a>
+                        </li>
+                        <li class="list-group-item bl0 br0"><a href="#" title="【必备】“两学一做”学习教育口袋书！">【必备】“两学一做”学习教育...</a>
+                        </li>
+                        <li class="list-group-item bl0 br0"><a href="#" title="关于在全市党员中开展“两学一做”学习教育的实施方案">关于在全市党员中开展“两学...</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 热点资讯 -->
+          <div class="col-xs-3">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <div class="e-box-title">
+                  <h2>热点资讯</h2>
+                </div>
+                <div class="e-box-content pt15" style="height:220px;overflow-y:auto;">
+                	<ul class="list-group">
+                    <li class="list-group-item bl0 br0 bt0 bb0"><i class="icons-12 icons-12-right gray m-r-xs"></i><a href="#" title="第一书记助推大宁务实攻坚">第一书记助推大宁务实攻坚</a></li>
+                    <li class="list-group-item bl0 br0 bt0 bb0"><i class="icons-12 icons-12-right gray m-r-xs"></i><a href="#" title="驻村“第一书记”张文宏:治理村庄环境收获重大成果">驻村“第一书记”张文宏:治理村庄...</a></li>
+                    <li class="list-group-item bl0 br0 bt0 bb0"><i class="icons-12 icons-12-right gray m-r-xs"></i><a href="#" title="“第一书记”要争做“两学一做”领头羊">“第一书记”要争做“两学一做”领头羊</a></li>
+                    <li class="list-group-item bl0 br0 bt0 bb0"><i class="icons-12 icons-12-right gray m-r-xs"></i><a href="#" title="群众就需要这样的第一书记">群众就需要这样的第一书记</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 资金投入 -->
+          <div class="col-xs-6">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <div class="e-box-title">
+                  <h2>第一书记派驻统计</h2>
+                   
+                </div>
+                <div class="e-box-content">
+                    <div id="zjtr" style="width:100%;height:265px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 脱贫情况 -->
+          <div class="col-xs-3">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <div class="e-box-title">
+                  <h2>脱贫比例(%)</h2>
+                </div>
+                <div class="e-box-content">
+                	<div class="clearfix e-form margin-t10 pt5 pl1 pr1">
+                    <div class="form-group clearfix">
+                      <div id="tpqk" style="width:100%;height:180px;"></div>
+                    </div>
+                    <table class="w-100per p0">
+                      <tr>
+                        <td class="tc brd btd">
+                          <p class="f10 g6 pt5 pb5">100</p>
+                          <p><a href="#"><span class="f13 b" style="color:#cc3333">460个</span></a></p>
+                        </td>
+                        <td class="tc brd btd">
+                          <p class="f10 g6 pt5 pb5">81~99</p>
+                          <p><a href="#"><span class="f13 b" style="color:#146ddc">109个</span></a></p>
+                        </td>
+                        <td class="tc brd btd">
+                          <p class="f10 g6 pt5 pb5">61~80</p>
+                          <p><a href="#"><span class="f13 b" style="color:#f99d41">30个</span></a></p>
+                        </td>
+                        <td class="tc brd btd">
+                          <p class="f10 g6 pt5 pb5">41~60</p>
+                          <p><a href="#"><span class="f13 b" style="color:#67b320">6个</span></a></p>
+                        </td>
+                        <td class="tc btd">
+                          <p class="f10 g6 pt5 pb5">0~40</p>
+                          <p><a href="#"><span class="f13 b" style="color:#f5e339">4个</span></a></p>
+                        </td>
+                         
+                        
+                        
+                        
+                        
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 在岗情况 -->
+          <div class="col-xs-3">
+            <div class="row-space">
+              <div class="e-box float-e-margins" style="height:280px;">
+                <div class="e-box-title">
+                  <h2>在岗情况</h2>
+                  <div class="clearfix e-form">
+                    <div class=" pull-right pt5 pr5">
+                      <input id="zgrq" type="text" class="form-item-date w-3xl" value="2016-10-26" style="height:18px;" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-box-content">
+                    <div id="zgqk" style=" height:265px;margin-left:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script src="../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+  
+  <!-- 统计图JS -->
+  <script src="../js/plugins/chartJs/echarts.js"></script>
+  
+  <!-- 日期控件JS -->
+  <script type="text/javascript" src="../bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="utf-8"></script>
+  
+  <!-- 统计图 -->
+  <script type="text/javascript">
+    /* 资金投入 */
+    // 初始化资金投入柱状图
+    var zjtrChart = echarts.init(document.getElementById('zjtr'));
+    // 资金投入的配置项和数据
+    var zjtrOption = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a}<br>{b}：{c}人"
+        },
+        legend: {
+            show: false
+        },
+        xAxis: {
+            axisLabel:{
+                textStyle:{fontSize:10},
+                rotate:0
+            },
+            data: ["枣庄","济宁","泰安","临沂","德州","聊城","滨州","菏泽"]
+        },
+        yAxis: {
+            name: '人数',
+            axisLabel:{
+                textStyle:{fontSize:10},
+                formatter: function (value, index) {
+                    return value;
+                }
+            }
+        },
+        series: [{
+            name: '地区',
+            type: 'bar',
+            barMinHeight: 10,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        fontWeight: 'bold',
+                        fontSize: 10
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#cc3333','#146ddc','#f99d41','#67b320','#cc3333','#146ddc','#f99d41'];
+                        return colorList[params.dataIndex];
+                    },
+                    opacity: 0.8    // 透明度
+                }
+            },
+           
+            data: [31, 44, 26, 139, 78, 71, 76, 177]
+        }]
+    };
+    // 显示资金投入图表
+    zjtrChart.setOption(zjtrOption);
+    // 图表点击事件
+    zjtrChart.on('click', function (params) {
+        var name = params.name;
+        var value = params.value;
+       // alert(name + '的投入资金为：' + value + '万元');
+    });
+    
+    /* 脱贫情况  100%  81-99，61-80，41-60 0-40
+*/
+    // 初始化脱贫情况柱状图
+    var tpqkChart = echarts.init(document.getElementById('tpqk'));
+    // 指定图表的配置项和数据
+    var tpqkOption = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a}<br>{b}%：{c}个"
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'left',
+            itemGap:5,
+            itemWidth:10,
+            itemHeight:10,
+            textStyle:{fontSize:10},
+            data:['100','81~99','61~80','41~60','0~40']
+        },
+        series: [{
+            name: '脱贫比例',
+            type: 'pie',
+            radius: ['40%', '80%'],
+            avoidLabelOverlap: false,
+            minAngle:10,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '14',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#cc3333','#146ddc','#f99d41','#67b320','#f5e339'];
+                        return colorList[params.dataIndex];
+                    },
+                    opacity: 0.8    // 透明度
+                }
+            },
+            data:[{
+                    name:'100',
+                    value:460
+                },{
+                    name:'81~99',
+                    value:109
+                },{
+                    name:'61~80',
+                    value:30
+                },{
+                    name:'41~60',
+                    value:6
+                },{
+                    name:'0~40',
+                    value:4
+                }
+            ]
+        }]
+    };
+    // 显示脱贫情况图表
+    tpqkChart.setOption(tpqkOption);
+    tpqkChart.on('click', function (params) {
+        var name = params.name;
+        var value = params.value;
+       // alert(name + '脱贫的村庄共：' + value + '个');
+    });
+    
+    /* 在岗情况 */
+    // 初始化在岗情况柱状图
+    var zgqkChart = echarts.init(document.getElementById('zgqk'));
+    // 资金投入的配置项和数据
+    var zgqkOption = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a}<br>{b}：{c}人"
+        },
+        legend: {
+            show: false
+        },
+        xAxis: {
+            data: ["计划","在岗","脱岗","请假"]
+        },
+        yAxis: {
+            name: '人数',
+            axisLabel:{
+                textStyle:{fontSize:7},
+                scaleStepWidth:10,
+                
+                formatter: function (value, index) {
+                      
+                    return value;
+                }
+            }
+        },
+        series: [{
+            name: '',
+            type: 'bar',
+            barMinHeight: 10,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        fontWeight: 'bold',
+                        fontSize: 12
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#cc3333','#146ddc','#f99d41','#67b320'];
+                        return colorList[params.dataIndex];
+                    },
+                    opacity: 0.8    // 透明度
+                }
+            },
+            data: [432, 415, 7,10]  
+        }]
+    };
+    // 显示在岗情况图表
+    zgqkChart.setOption(zgqkOption);
+    // 图表点击事件
+    zgqkChart.on('click', function (params) {
+        var name = params.name;
+        var value = params.value;
+       // alert(name + '的人数为：' + value + '人');
+    });
+  </script>
+  
+  
+  <script type="text/javascript">
+    // 资金投入日期
+    $("#trrq").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true
+    });
+    // 在岗日期
+    $("#zgrq").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true
+    });
+  </script>
+</body>
+</html>
